@@ -1,2 +1,2 @@
 # myhome
-Personal homepage for mybome profile
+Personal homepage for myhome profile
