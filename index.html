@@ -40,7 +40,7 @@
       background:
         radial-gradient(1200px 700px at 20% -10%, rgba(255,255,255,0.15), transparent 60%),
         linear-gradient(180deg, var(--top-color) 0%, var(--mid-color) 55%, var(--bottom-color) 100%);
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     .hero {
@@ -60,7 +60,15 @@
       font-weight: 500;
       text-transform: uppercase;
       color: rgba(245, 248, 255, 0.95);
-      margin-bottom: 16px;
+      margin-bottom: 14px;
+    }
+
+    .headline{
+      font-size: clamp(22px, 2.2vw, 38px);
+      line-height: 1.25;
+      margin: 0 0 16px 0;
+      font-weight: 700;
+      color: #ffffff;
     }
 
     .bio {
@@ -69,6 +77,30 @@
       color: var(--muted-text);
       word-break: keep-all;
       text-wrap: pretty;
+    }
+
+    .highlights{
+      margin-top: 16px;
+      display: grid;
+      gap: 8px;
+      color: rgba(244,247,251,0.92);
+      font-size: clamp(14px, 1.0vw, 17px);
+      line-height: 1.7;
+    }
+
+    .links{
+      margin-top: 18px;
+      font-size: clamp(14px, 0.95vw, 16px);
+      color: rgba(244,247,251,0.9);
+    }
+
+    .links a{
+      color: #cfe6ff;
+      text-underline-offset: 3px;
+    }
+
+    .links a:hover{
+      color: #ffffff;
     }
 
     .hero::after {
@@ -87,13 +119,29 @@
   <main class="hero">
     <section class="content" aria-label="profile">
       <p class="caption">MYHOME · PROFILE</p>
+      <h1 class="headline">문종훈 | Customer Success · Technical Sales · Enterprise TAM</h1>
+
       <p class="bio">
         Customer Success, Technical Sales, and Enterprise Technical Account Management 전문가로서
         24년 이상 Microsoft Cloud, Security, Mobility, Identity, Information Protection 분야에서
-        고객 가치 창출과 기술 영업, 서비스딜리버리, 전략적 파트너십 구축을 수행해 왔습니다.
+        고객 가치 창출과 기술 영업, 서비스 딜리버리, 전략적 파트너십 구축을 수행해 왔습니다.
         엔터프라이즈 고객의 클라우드 전환·도입·활성화·보안 강화를 주도하며,
-        기술 전문성과 비즈니스 감각을 결합해 고객 성공·매출 성장·시장 확장을 동시에 달성한
-        경험을 보유하고 있습니다.
+        기술 전문성과 비즈니스 감각을 결합해 고객 성공·매출 성장·시장 확장을 동시에 달성한 경험을 보유하고 있습니다.
+      </p>
+
+      <div class="highlights" aria-label="highlights">
+        <p>• 엔터프라이즈 고객 대상 클라우드 전환 및 보안 고도화 전략 수립/실행</p>
+        <p>• Microsoft Cloud 기반 아키텍처 제안, 도입, 활성화, 운영 정착 지원</p>
+        <p>• C-Level/의사결정자와의 협업을 통한 비즈니스 목표-기술 로드맵 정렬</p>
+        <p>• 기술 영업부터 서비스 딜리버리까지 End-to-End 고객 여정 리딩</p>
+        <p>• 파트너/내부 조직과의 크로스펑셔널 협업으로 확장 가능한 성공 모델 구축</p>
+      </div>
+
+      <p class="links">
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/%EC%A2%85%ED%9B%88-%EB%AC%B8-165a3399/" target="_blank" rel="noopener noreferrer">
+          종훈 문 프로필 보기
+        </a>
       </p>
     </section>
   </main>
